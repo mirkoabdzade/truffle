@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/css/lightbox.min.css">
+<link rel="stylesheet" href="p-style.css">
+<body>
+<header class="section">
+
+  <!-- container -->
+  <div class="container">
+    <h1>Iranian Truffle</h1>
+    <p class="hide-small" style="font-family: 'Courier New', Courier, monospace;">The Iranian Truffle WebSite.</p>
+
+    <nav class="site-nav" style="font-family: 'PT Sans', Arial, sans-serif;">
+      <ul class="group">
+        <li><a href="p-home.html">Home</a></li>
+        <li><a href="p-aboutus.html">About Us</a></li>
+        <li><a href="p-gallery.html">Gallery</a></li>
+        <li class="hide-small"><a href="p-shop.html">Shop</a></li>
+        <li class="hide-small"><a href="p-contactus.html">Contact Us</a></li>
+        <li><a href="p-register.html">Register</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- /container -->
+
+</header>
+
+<div class="content-area group section">
+
+
+
+
+
+
+
+<div class="mirko">
+  <div class="heading">Video Gallery</div>
+  <div class="video-mirko">
+  <div class="video">
+    <video src="p-video/07.mp4"></video>
+  </div>
+  <div class="video">
+    <video src="p-video/05.mp4"></video>
+  </div>
+  <div class="video">
+    <video src="p-video/sal01.mp4"></video>
+  </div>
+  <div class="video">
+    <video src="p-video/10.mp4"></video>
+  </div>
+  <div class="video">
+    <video src="p-video/04.mp4"></video>
+  </div>
+  <div class="video">
+    <video src="p-video/06.mp4"></video>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- container -->
+  <div class="container">
+
+    <!-- row -->
+    <div class="row">
+
+      <!-- col -->
+      <div class="col col-md-8 push-down-sm">
+
+  
+        <!-- thumbnails -->
+  
+        <!-- /thumbnails -->
+
+      </div>
+      <!-- /col -->
+
+      <!-- col -->
+      
+      <!-- /col -->
+
+    </div>
+    <!-- /row -->
+
+  </div>
+  <!-- /container -->
+
+</div>
+
+
+
+<script>
+  var video = document.querySelectorAll('video')
+  video.forEach(play => play.addEventListener('click', () =>{
+  play.classList.toggle('active');
+  if(play.paused){
+    play.play();
+  }else{
+    play.pause();
+    play.currentTime = 0
+  }
+  }));
+</script>
+
+
+
+
+
+</body>
+<footer>
+  <p>&copy; 2021 - 5.mirko </p>
+</footer>
+</html>
